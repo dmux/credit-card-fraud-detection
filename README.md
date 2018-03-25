@@ -56,4 +56,4 @@ Em um terminal ou janela de comando, navegue até o diretório raiz de projeto e
 Isso abrirá o o software e arquivo de projeto Jupyter Notebook em seu navegador.
 
 ## Dados
-Os dados usados neste projeto estão incluídos em `creditcard.csv`. O conjunto de dados pode ser baixado em https://www.kaggle.com/mlg-ulb/creditcardfraud/data.
+O Dataset contém transações realizadas com cartões de crédito em setembro de 2013 pelos detentores de cartão europeus. Este conjunto de dados apresenta transações ocorridas em dois dias, onde temos 492 fraudes de 284.807 transações. Os dados usados neste projeto estão incluídos em `creditcard.csv`. O conjunto de dados pode ser baixado em https://www.kaggle.com/mlg-ulb/creditcardfraud/data.
