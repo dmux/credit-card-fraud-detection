@@ -24,7 +24,13 @@ Ao final de nossas análise, podemos afirmar que encontramos um classificador qu
 
 <img src="result.png">
 
-Isso é possível pela estratégia de solução que selecionamos ao longo de nossa análise, que consistiu em:
+Com esses resultados é possível analisar que o estimador final:
+- gera pouco mais de 20% de falsos negativos;
+- gera pouco mais de 25% de falsos positivos.
+
+Se comparado com outros modelos encontrados na Internet para o mesmo dataset, esses resultados são surpreendentemente bons. Enquanto que em algumas análises se encontrou um Recall de 0.61-0.63, nossa análise atingiu um Recall de 0.79. Outro trabalho muito bom desenvolvido em R atingiu valores médios de AUPRC de 0.95-0.96, o nosso modelo atinge médias de 0.96-0.97 para situação similar.
+
+Isso foi possível pela estratégia de solução que selecionamos ao longo de nossa análise, que consistiu em:
 - **não remover nenhum *outlier***: verificamos que era melhor para o modelo mantê-los;
 - **dividir as transações em dois dias**: as amostras do primeiro dia para fazer o modelo (50% dos dados para treino e 50% para teste, com *grid search* e seleção inteligente de *features*); e as amostras do segundo dia para testar o modelo final obtido (modelo calibrado);
 - **AUC final no conjunto de testes**: 0.8932.
